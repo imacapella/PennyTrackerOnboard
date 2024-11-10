@@ -13,7 +13,7 @@ struct ContentView: View {
         
         ZStack {
             LinearGradient(
-                gradient: Gradient(colors: [Color.red.opacity(0.6), Color.red.opacity(0.8)]),
+                gradient: Gradient(colors: [Color.pennyRed.opacity(0.9), Color.pennyRed.opacity(0.7)]),
                 startPoint: .top,
                 endPoint: .bottom
             )
@@ -40,20 +40,8 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .padding(.top, 10)
                 
-                Button{
-                    print("move to another page")
-                }label:{
-                    Label("Move To Next Page", systemImage:"chevron.right")
-                        .foregroundColor(.white)
-                        .padding()
-                        .cornerRadius(40)
-                        .background(
-                            DotPattern(dotColor: .black, backgroundColor: .red.opacity(0.9), dotSize: 3, spacing: 1, opacity: 0.2)
-                                .clipShape(RoundedRectangle(cornerRadius: 12))
-                        )
-                        .frame(width: .infinity)
-                }
-                .padding()
+                
+                
                 Spacer()
                 
                 Text("All Rights Reserved")
@@ -68,8 +56,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-// MARK: Next Page Button
-/*
-}*/
-// MARK: Next Page Button
